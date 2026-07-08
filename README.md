@@ -29,8 +29,8 @@ This repo is a Claude Code plugin marketplace:
 /plugin install agentfinder@ard-connectors
 ```
 
-For ChatGPT, GitHub Copilot, Microsoft Copilot, and Gemini — both Skill and MCP
-setup — see **[Connect a chatbot](https://agenticresourcediscovery.org/connect/)**.
+For ChatGPT, GitHub Copilot, Microsoft Copilot, Gemini, and Cursor — both Skill
+and MCP setup — see **[Connect a chatbot](https://agenticresourcediscovery.org/connect/)**.
 
 ## Layout
 

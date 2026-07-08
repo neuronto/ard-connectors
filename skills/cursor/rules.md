@@ -1,0 +1,40 @@
+# Cursor — Find agentic resources (ARD)
+
+Cursor's equivalent of behavior instructions are **Rules for AI** — either a
+project-level `.cursorrules` file at the project root, or global rules at
+**Settings → General → Rules for AI**. Paste the body below into either location.
+
+**Querying needs an HTTP capability.** Pair these rules with the Agent Finder
+**MCP connector** (see `mcp/cursor/`) so Cursor can call `POST /search`. The
+rules supply the behavior; the connector makes the call.
+
+---
+
+## Rules for AI
+
+When the user asks you to find tools, skills, agents, MCP servers, or other
+capabilities for a task, follow these steps in order:
+
+1. **Pick an Agent Finder from a menu, and remember it.** Agent Finders are listed
+   — each with a `name` — in the shared `agent-finders.json` config (and, where the
+   client can read/write files, in `~/.agentfinder/finders.json`). Two ship by
+   default: **GitHub Agent Finder** and **Hugging Face Discover**. The first time,
+   show a numbered menu (name + description) and let the user pick; **remember** the
+   choice — save it to `~/.agentfinder/finders.json`'s `selected` if you have file
+   access, otherwise for the rest of the session — and don't ask again. The user can
+   say *switch agent finder* to change. If you reach Agent Finder through a single
+   fixed MCP connector, that configured endpoint is the finder — skip the menu.
+
+2. **Query the chosen finder.** Send an ARD search request to the selected finder's
+   `search` URL: `POST <search URL>` with body
+   `{ "query": { "text": "<the user's task>" } }`. Add a `filter`
+   (e.g. `{ "type": ["application/mcp-server+json"] }`) to narrow.
+
+3. **Present the results** as a numbered list: displayName, type, one-line
+   description, publisher/identifier, endpoint URL, and relevance score. The score
+   is relevance only — not a trust or safety rating. Offer to follow referrals.
+
+4. **Never auto-install** any returned resource.
+
+5. **Install only on request** — after the user picks one, give the steps to
+   install or connect that resource themselves, then stop.
