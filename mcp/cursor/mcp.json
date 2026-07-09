@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "agent-finder": {
+      "url": "https://agent-finder.example.org/mcp"
+    }
+  }
+}
