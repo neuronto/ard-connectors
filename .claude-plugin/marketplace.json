@@ -1,5 +1,5 @@
 {
-  "name": "ard-connectors",
+  "name": "neuronto",
   "owner": {
     "name": "Neuronto",
     "url": "https://github.com/neuronto"
@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "agentfinder",
+      "name": "neuronto-agent-finder",
       "source": "./",
       "description": "Discover tools, skills, MCP servers, agents and APIs for a task by searching ARD discovery services. Offers a menu of every public Agent Finder, remembers the choice, presents ranked results, and never installs anything automatically.",
       "version": "0.2.0",

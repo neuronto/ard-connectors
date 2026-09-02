@@ -152,7 +152,7 @@ API) using the resource's own endpoint and protocol. Then stop and let them act.
 
 ```
 /plugin marketplace add neuronto/ard-connectors
-/plugin install agentfinder@ard-connectors
+/plugin install neuronto-agent-finder@neuronto
 ```
 
 **Manual** — copy this `agentfinder/` folder into your Claude Code

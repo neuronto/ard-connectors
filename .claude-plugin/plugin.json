@@ -1,6 +1,6 @@
 {
-  "name": "agentfinder",
-  "displayName": "Agent Finder (ARD)",
+  "name": "neuronto-agent-finder",
+  "displayName": "Neuronto Agent Finder",
   "version": "0.2.0",
   "description": "Find tools, skills, MCP servers, agents and APIs for a task by searching ARD (Agentic Resource Discovery) services.",
   "author": {

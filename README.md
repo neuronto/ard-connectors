@@ -12,9 +12,16 @@ subset, so the menu reflects the whole ecosystem.
 
 ## Claude Code
 
+> Named `neuronto` rather than `ard-connectors` on purpose. Claude Code registers
+> one marketplace per name and a second one with the same name **replaces** the
+> first, so reusing upstream's name would silently evict it for anyone who had
+> both installed. The plugin is `neuronto-agent-finder` for the same reason: the
+> bare `agentfinder` name is upstream's and is what their site promotes.
+
+
 ```
 /plugin marketplace add neuronto/ard-connectors
-/plugin install agentfinder@ard-connectors
+/plugin install neuronto-agent-finder@neuronto
 ```
 
 The plugin bundles the `neuronto` MCP connector, so the skill can query the
