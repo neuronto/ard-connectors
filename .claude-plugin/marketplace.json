@@ -5,26 +5,32 @@
     "url": "https://github.com/neuronto"
   },
   "metadata": {
-    "description": "Find tools, skills, MCP servers, agents and APIs for a task by searching ARD (Agentic Resource Discovery) services, from inside Claude Code.",
+    "description": "Search every public Agentic Resource Discovery (ARD) registry from inside Claude Code to find MCP servers, skills, agents and APIs for a task.",
     "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "neuronto-agent-finder",
       "source": "./",
-      "description": "Discover tools, skills, MCP servers, agents and APIs for a task by searching ARD discovery services. Offers a menu of every public Agent Finder, remembers the choice, presents ranked results, and never installs anything automatically.",
+      "description": "Find the MCP servers, skills, agents and APIs that can do a task, without leaving Claude Code. Searches every public ARD registry at once, presents ranked results with what was verified about each, and never installs anything automatically.",
       "version": "0.2.0",
       "keywords": [
-        "ard",
-        "discovery",
         "mcp",
+        "mcp-server",
+        "ard",
+        "agentic-resource-discovery",
+        "discovery",
+        "tool-discovery",
+        "registry",
+        "search",
         "agents",
-        "tools",
-        "search"
+        "skills",
+        "api-discovery"
       ],
       "skills": [
         "./skills/agentfinder"
-      ]
+      ],
+      "category": "developer-tools"
     }
   ]
 }
