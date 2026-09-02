@@ -17,10 +17,12 @@ wants to find resources for. Also use it whenever the user otherwise asks you to
 searches ARD discovery services (Agent Finders) and presents matches for the user
 to choose from.
 
-**Requirements.** Querying a finder needs an HTTP capability — in Claude Code,
-`Bash` with `curl`; or an Agent Finder **MCP connector** (see `mcp/claude/` in
-this repo); or a fetch/web tool. If none is available, tell the user and point
-them at the MCP connector setup.
+**Requirements.** Querying a finder needs an HTTP capability. Installed as a
+plugin, one is already bundled: the `neuronto` MCP connector ships with this
+plugin and its tools (`find_resource`, `find_tool`, `registry_stats`) query the
+federated index directly, so prefer those when they are available. Otherwise use
+`Bash` with `curl`, or any fetch/web tool. If none is available, say so and point
+the user at the connector configs in `mcp/`.
 
 Follow this contract exactly:
 

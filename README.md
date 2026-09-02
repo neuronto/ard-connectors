@@ -17,6 +17,10 @@ subset, so the menu reflects the whole ecosystem.
 /plugin install agentfinder@ard-connectors
 ```
 
+The plugin bundles the `neuronto` MCP connector, so the skill can query the
+federated index straight away with no further setup. Removing or replacing it is
+a one-line edit to `.mcp.json`.
+
 Then ask for what you need in plain language:
 
 ```

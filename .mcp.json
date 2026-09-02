@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "neuronto": {
+      "type": "http",
+      "url": "https://neuronto.com/mcp"
+    }
+  }
+}

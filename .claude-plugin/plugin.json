@@ -20,5 +20,6 @@
   ],
   "skills": [
     "./skills/agentfinder"
-  ]
+  ],
+  "mcpServers": "./.mcp.json"
 }
