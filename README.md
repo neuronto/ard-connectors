@@ -95,4 +95,12 @@ this distribution, or a new Agent Finder to list, are welcome here.
 
 ## Licence
 
-Apache-2.0, as upstream.
+**Unresolved, and stated plainly rather than guessed.** The upstream repository
+publishes no licence: no `LICENSE` file, no licence field, no statement in its
+README. Under default copyright that means no redistribution terms are granted
+for the files inherited from it, so this fork cannot assert any either. (The ARD
+specification repository is Apache-2.0; the connectors repository is not.)
+
+Changes made in this fork are offered under Apache-2.0 by their author. That does
+not extend to the inherited files. Asking upstream to add a licence is the clean
+fix and is worth doing for everyone who forks it, not only for us.
