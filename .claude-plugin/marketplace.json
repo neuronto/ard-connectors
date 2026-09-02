@@ -1,9 +1,12 @@
 {
   "name": "ard-connectors",
-  "description": "Find tools, skills, MCP servers, agents and APIs for a task by searching ARD (Agentic Resource Discovery) services, from inside Claude Code.",
   "owner": {
     "name": "Neuronto",
     "url": "https://github.com/neuronto"
+  },
+  "metadata": {
+    "description": "Find tools, skills, MCP servers, agents and APIs for a task by searching ARD (Agentic Resource Discovery) services, from inside Claude Code.",
+    "version": "0.2.0"
   },
   "plugins": [
     {
