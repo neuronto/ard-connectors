@@ -2,7 +2,7 @@
 
 Connect Google Antigravity to an Agentic Resource Discovery (ARD) service as a **remote MCP** connector.
 
-> Replace `https://agent-finder.example.org/mcp` with your ARD MCP endpoint.
+> This points at Neuronto, which federates every other public ARD registry. To use a different one, replace the URL with any `mcp` endpoint from `agent-finders.json`.
 
 ## Custom MCP Server Configuration
 
@@ -17,7 +17,7 @@ To register the ARD MCP server, add the configuration to your Antigravity global
 {
   "mcpServers": {
     "agent-finder": {
-      "serverUrl": "https://agent-finder.example.org/mcp"
+      "serverUrl": "https://neuronto.com/mcp"
     }
   }
 }

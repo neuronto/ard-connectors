@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "agent-finder": {
-      "httpUrl": "https://agent-finder.example.org/mcp"
+      "httpUrl": "https://neuronto.com/mcp"
     }
   }
 }

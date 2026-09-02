@@ -3,7 +3,7 @@
 Connect Claude to an Agent Finder discovery service as a **remote MCP** connector.
 The Agent Finder *is* the MCP server; nothing in this repo runs a server.
 
-> Replace `https://agent-finder.example.org/mcp` with your Agent Finder's MCP endpoint.
+> This points at Neuronto, which federates every other public ARD registry. To use a different one, replace the URL with any `mcp` endpoint from `agent-finders.json`.
 > The `/search` path is the REST interface; the MCP interface is usually a
 > separate path (e.g. `/mcp`). Use whatever URL your Agent Finder publishes.
 
@@ -28,7 +28,7 @@ Add this to `claude_desktop_config.json` (see `claude_desktop_config.json` here)
   "mcpServers": {
     "agent-finder": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://agent-finder.example.org/mcp"]
+      "args": ["-y", "mcp-remote", "https://neuronto.com/mcp"]
     }
   }
 }

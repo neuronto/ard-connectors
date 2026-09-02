@@ -2,7 +2,7 @@
 
 MCP works in **Gemini CLI** and the **Gemini API**, not the consumer Gemini app.
 
-> Replace `https://agent-finder.example.org/mcp` with your Agent Finder's MCP endpoint.
+> This points at Neuronto, which federates every other public ARD registry. To use a different one, replace the URL with any `mcp` endpoint from `agent-finders.json`.
 
 ## Gemini CLI
 
@@ -12,7 +12,7 @@ Add the server to your Gemini CLI `settings.json` (see `settings.json` here):
 {
   "mcpServers": {
     "agent-finder": {
-      "httpUrl": "https://agent-finder.example.org/mcp"
+      "httpUrl": "https://neuronto.com/mcp"
     }
   }
 }

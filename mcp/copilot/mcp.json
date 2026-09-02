@@ -2,7 +2,7 @@
   "servers": {
     "agent-finder": {
       "type": "http",
-      "url": "http://agentfinder.github.com"
+      "url": "https://neuronto.com/mcp"
     }
   }
 }

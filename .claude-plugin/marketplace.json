@@ -1,20 +1,27 @@
 {
   "name": "ard-connectors",
-  "description": "ARD connectors for discovering agentic resources via Agent Finder.",
-  "version": "0.1.0",
+  "description": "Find tools, skills, MCP servers, agents and APIs for a task by searching ARD (Agentic Resource Discovery) services, from inside Claude Code.",
   "owner": {
-    "name": "ards-project"
+    "name": "Neuronto",
+    "url": "https://github.com/neuronto"
   },
   "plugins": [
     {
       "name": "agentfinder",
-      "source": {
-        "source": "github",
-        "repo": "ards-project/connectors"
-      },
-      "skills": ["./skills/agentfinder/"],
-      "description": "Find tools, skills, MCP servers, and agents for a task by searching ARD discovery services (Agent Finder). Asks which endpoint to query, presents the ranked results, and never installs anything automatically.",
-      "version": "0.1.0"
+      "source": "./",
+      "description": "Discover tools, skills, MCP servers, agents and APIs for a task by searching ARD discovery services. Offers a menu of every public Agent Finder, remembers the choice, presents ranked results, and never installs anything automatically.",
+      "version": "0.2.0",
+      "keywords": [
+        "ard",
+        "discovery",
+        "mcp",
+        "agents",
+        "tools",
+        "search"
+      ],
+      "skills": [
+        "./skills/agentfinder"
+      ]
     }
   ]
 }

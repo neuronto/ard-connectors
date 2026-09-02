@@ -4,10 +4,10 @@ Cursor supports MCP servers (v0.43+) via `~/.cursor/mcp.json` (global) or
 `.cursor/mcp.json` (project-level). The Agent Finder *is* the MCP server;
 nothing in this repo runs a server.
 
-> Replace `https://agent-finder.example.org/mcp` with your Agent Finder's MCP
-> endpoint. The `/search` path is the REST interface; the MCP interface is
-> usually a separate path (e.g. `/mcp`). Use whatever URL your Agent Finder
-> publishes.
+> This points at Neuronto, which federates every other public ARD registry, so
+> one connector covers the whole list. To use a different finder, replace the URL
+> with any `mcp` endpoint from `agent-finders.json`. Note that `/search` is the
+> REST interface and the MCP interface is a separate path.
 
 ## Global setup
 
@@ -18,7 +18,7 @@ Finder available across all your projects:
 {
   "mcpServers": {
     "agent-finder": {
-      "url": "https://agent-finder.example.org/mcp"
+      "url": "https://neuronto.com/mcp"
     }
   }
 }

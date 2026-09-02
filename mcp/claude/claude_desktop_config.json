@@ -2,7 +2,7 @@
   "mcpServers": {
     "agent-finder": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://agent-finder.example.org/mcp"]
+      "args": ["-y", "mcp-remote", "https://neuronto.com/mcp"]
     }
   }
 }
