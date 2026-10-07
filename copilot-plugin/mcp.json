@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "neuronto-ard-registry": {
+      "type": "streamable-http",
+      "url": "https://neuronto.com/mcp"
+    },
+    "neuronto-payments": {
+      "type": "streamable-http",
+      "url": "https://pay.neuronto.com/mcp"
+    }
+  }
+}
