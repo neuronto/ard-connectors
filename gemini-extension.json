@@ -1,0 +1,14 @@
+{
+  "name": "neuronto-agent-finder",
+  "version": "1.0.0",
+  "description": "Find the MCP servers, skills, agents and APIs that can do a task, by searching every public Agentic Resource Discovery (ARD) registry at once. Also adds tools to put an API behind x402 payments and buy prepaid credits.",
+  "mcpServers": {
+    "neuronto-ard-registry": {
+      "httpUrl": "https://neuronto.com/mcp"
+    },
+    "neuronto-payments": {
+      "httpUrl": "https://pay.neuronto.com/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
