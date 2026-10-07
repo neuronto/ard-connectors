@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Search every public Agentic Resource Discovery (ARD) registry from inside Claude Code to find MCP servers, skills, agents and APIs for a task.",
-    "version": "0.2.0"
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "neuronto-agent-finder",
       "source": "./",
       "description": "Find the MCP servers, skills, agents and APIs that can do a task, without leaving Claude Code. Searches every public ARD registry at once, presents ranked results with what was verified about each, and never installs anything automatically.",
-      "version": "0.2.0",
+      "version": "1.0.0",
       "keywords": [
         "mcp",
         "mcp-server",
@@ -30,7 +30,9 @@
       "skills": [
         "./skills/agentfinder"
       ],
-      "category": "developer-tools"
+      "category": "developer-tools",
+      "homepage": "https://neuronto.com",
+      "repository": "https://github.com/neuronto/ard-connectors"
     }
   ]
 }

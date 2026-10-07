@@ -1,7 +1,7 @@
 {
   "name": "neuronto-agent-finder",
   "displayName": "Neuronto Agent Finder",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Find the MCP servers, skills, agents and APIs that can do a task. Searches every public Agentic Resource Discovery (ARD) registry at once and returns ranked, verified matches with the endpoint to connect to.",
   "author": {
     "name": "Neuronto",
