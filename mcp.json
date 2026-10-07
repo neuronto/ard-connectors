@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "neuronto-ard-registry": {
+      "type": "http",
+      "url": "https://neuronto.com/mcp"
+    },
+    "neuronto-payments": {
+      "type": "http",
+      "url": "https://pay.neuronto.com/mcp"
+    }
+  }
+}

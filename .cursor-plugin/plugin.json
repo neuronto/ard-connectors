@@ -1,0 +1,26 @@
+{
+  "name": "neuronto-agent-finder",
+  "displayName": "Neuronto Agent Finder",
+  "version": "1.0.0",
+  "description": "Find the MCP servers, skills, agents and APIs that can do a task by searching every public Agentic Resource Discovery (ARD) registry at once, and put an API behind x402 payments.",
+  "author": {
+    "name": "Neuronto"
+  },
+  "publisher": "Neuronto",
+  "homepage": "https://neuronto.com",
+  "repository": "https://github.com/neuronto/ard-connectors",
+  "license": "Apache-2.0",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "ard",
+    "agentic-resource-discovery",
+    "discovery",
+    "tool-discovery",
+    "registry",
+    "x402"
+  ],
+  "category": "developer-tools",
+  "skills": "./copilot-plugin/skills/neuronto-agent-finder",
+  "mcpServers": "./mcp.json"
+}
