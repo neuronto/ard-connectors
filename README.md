@@ -38,6 +38,40 @@ The skill shows the Agent Finder menu once, remembers your choice in
 `~/.agentfinder/finders.json`, presents ranked results, and **never installs
 anything for you**. Installation is always your explicit step.
 
+## Gemini CLI
+
+This repository is a Gemini CLI extension (`gemini-extension.json` and
+`GEMINI.md` at the root). It adds both remote MCP servers:
+
+```
+gemini extensions install https://github.com/neuronto/ard-connectors
+```
+
+## GitHub Copilot
+
+The plugin lives in [`copilot-plugin/`](copilot-plugin/): `plugin.json`,
+`mcp.json` and one skill. It bundles the same two remote MCP servers. The plugin
+path inside this repository is `copilot-plugin`.
+
+## Cursor
+
+The repository root is also a Cursor plugin (`.cursor-plugin/plugin.json` and
+`mcp.json`). It bundles the same two remote MCP servers and the same skill as the
+Copilot plugin.
+
+## The two servers
+
+| Server | Endpoint | What it does |
+|---|---|---|
+| Neuronto ARD Registry | `https://neuronto.com/mcp` | search for MCP servers, skills, agents, APIs and individual tools; publish a server to the index |
+| Neuronto Payments | `https://pay.neuronto.com/mcp` | x402 facilitator on Base: put an API behind x402 and buy prepaid credits |
+
+To add the payments server to Claude Code:
+
+```
+claude mcp add --transport http neuronto-payments https://pay.neuronto.com/mcp
+```
+
 ## Other clients
 
 MCP connector configs, one per client, in [`mcp/`](mcp/):
@@ -102,12 +136,14 @@ this distribution, or a new Agent Finder to list, are welcome here.
 
 ## Licence
 
-**Unresolved, and stated plainly rather than guessed.** The upstream repository
-publishes no licence: no `LICENSE` file, no licence field, no statement in its
-README. Under default copyright that means no redistribution terms are granted
-for the files inherited from it, so this fork cannot assert any either. (The ARD
-specification repository is Apache-2.0; the connectors repository is not.)
+Files authored in this distribution are licensed under the Apache License 2.0
+(see [`LICENSE`](LICENSE)). That covers `gemini-extension.json`, `GEMINI.md`,
+everything in [`copilot-plugin/`](copilot-plugin/), `.cursor-plugin/`, `mcp.json`,
+the Claude Code marketplace and plugin manifests, and this README.
 
-Changes made in this fork are offered under Apache-2.0 by their author. That does
-not extend to the inherited files. Asking upstream to add a licence is the clean
-fix and is worth doing for everyone who forks it, not only for us.
+The files inherited from the upstream repository are a separate matter. Upstream
+publishes no licence for them (no `LICENSE` file, no licence field, no statement
+in its README), so no terms are granted for those files by this repository.
+They are `agent-finders.json`, `shared/`, `skills/` and the per-client configs in
+`mcp/`. Asking upstream to add a licence is the clean fix for everyone who forks
+it.
