@@ -4,6 +4,13 @@ Client-side connectors (Skills + MCP) that let an AI client discover agentic
 resources through **ARD (Agentic Resource Discovery)**: the MCP servers, skills,
 agents and APIs that can actually do a task.
 
+ARD is also an IETF Internet-Draft since 30 October 2026, under the name **Agent
+Resource Discovery** ([architecture](https://datatracker.ietf.org/doc/draft-bu-dawn-ard-architecture/),
+[initial contact](https://datatracker.ietf.org/doc/draft-jimenez-dawn-ard-initial-contact/),
+[manifest and lookup](https://datatracker.ietf.org/doc/draft-bu-dawn-ard-discovery/)).
+The connectors speak both: the search request below is the same in the specification and
+in the drafts.
+
 Upstream project: [ards-project/ard-connectors](https://github.com/ards-project/ard-connectors).
 This distribution is maintained by [Neuronto](https://neuronto.com) and differs
 in two ways: it ships as an installable Claude Code plugin marketplace, and the
@@ -127,6 +134,12 @@ Narrow by resource type:
 
 Results carry a `score`. It is **relevance only** and is not a trust, safety or
 quality rating. Do not present it as one.
+
+Under the IETF drafts a finder may page with `pageSize` and `pageToken` (the response
+carries `nextPageToken`), and answers errors as RFC 9457 Problem Details
+(`application/problem+json`) with a code such as `INVALID_ARGUMENT` or
+`RATE_LIMIT_EXCEEDED`. A finder's own manifest entry of type
+`application/ai-registry+json` gives its base URL; append `/search`.
 
 ## Contributing
 
